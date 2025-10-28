@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Mae">
+    <meta property="og:image" content="https://raw.githubusercontent.com/mae-amiba-me/amiba.me-linktree/123a0cf247f4a1ca91717ccfdbae7d6497667f47/images/profile_picture.gif">
+    <meta property="og:url" content="https://mae.amiba.me">
+    <meta property="og:site_name" content="Amiba Mae">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta content="#b19efd" data-react-helmet="true" name="theme-color" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#b19efd">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <title>Mae amiba.me</title>
+    <br>
+    </div>
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      function getDocHeight(doc) {
+          doc = doc || document;
+          // stackoverflow.com/questions/1145850/
+          var body = doc.body, html = doc.documentElement;
+          var height = Math.max( body.scrollHeight, body.offsetHeight, 
+              html.clientHeight, html.scrollHeight, html.offsetHeight );
+          return height;
+      }
+      
+      function setIframeHeight(id) {
+          var ifrm = document.getElementById(id);
+          var doc = ifrm.contentDocument? ifrm.contentDocument: 
+              ifrm.contentWindow.document;
+          ifrm.style.visibility = 'hidden';
+          ifrm.style.height = "300px"; // reset to minimal height ...
+          // IE opt. for bing/msn needs a bit added or scrollbar appears
+          ifrm.style.height = getDocHeight( doc ) + 100 + "px";
+          ifrm.style.visibility = 'visible';
+      }
+      
+      document.getElementById('ifrm').onload = function() { // Adjust the Id accordingly
+          setIframeHeight(this.id);
+      }
+      </script>        
+  </head>
+
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+ <!--
+    <a id="profilePicture" href="#popup">
+      <img src="" alt="">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="" target="_blank">
+            <img src="" alt="">
+          </a>
+        </div>
+        <div class="popup-quote">
+          <a href=""></a>
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+  -->
+    <div id="userName">
+      amiba mae
+    </div>
+    </div>
+    <!--
+    <iframe 
+       src="https://player.kick.com/amiba-me?autoplay=true" 
+       height="720" 
+       width="100%"
+       frameborder="0" 
+       scrolling="no" 
+       allowfullscreen="true"> 
+   </iframe>
+-->
+    <!-- Twitch Channel Embedded-->
+  <div class="row" align="center">
+  <!-- Add a placeholder for the Twitch embed -->
+   <div id="twitch-embed"></div>
+   <!-- Load the Twitch embed script -->
+   <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+   <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+   <script type="text/javascript">
+     new Twitch.Embed("twitch-embed", {
+       width: "100%",
+       height: "640",
+       channel: "amibamae",
+       autoplay: true
+     });
+   </script>
+        <br>
+          
+        <div id="links">
+      <a class="link"  href="https://discord.com/invite/5EPknFXDgw" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>discord
+      </a>
+      <a class="link"  href="https://www.instagram.com/mae.amiba.me" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>instagram
+      </a>
+      <a class="link"  href="https://www.tiktok.com/@mae.amiba.me" target="_blank">
+        <i class="fab fa-tiktok">&nbsp;</i>tiktok
+      </a>
+      <a class="link"  href="https://www.youtube.com/@amibamae" target="_blank">
+        <i class="fab fa-youtube">&nbsp;</i>youtube
+      </a>
+      <a class="link"  href="https://www.twitch.tv/amibamae" target="_blank">
+        <i class="fab fa-twitch">&nbsp;</i>twitch
+      </a>
+      <a class="link"  href="https://x.com/amibamae" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>twitter/x
+      </a>          
+      <a class="link"  href="https://coindrop.to/mae" target="_blank">
+        <i class="fab fa-money">&nbsp;</i>donation options
+      </a>
+      <iframe src="https://discord.com/widget?id=1295908677722705970&theme=dark" width="348" height="300" allowtransparency="false" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </a>    
+      </div>
+        <br>
+  </body>
+</html>
